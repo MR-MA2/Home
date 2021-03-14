@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			body{
+				background: url(img/bg1.jpg);
+				background-size: 100% 100%;
+			}
+			.start{
+				width: 340px;
+				height: 340px;
+				/* border: 1px solid black; */
+				margin-left: auto;
+				margin-right: auto;
+				position: relative;
+			}
+			.start>ul>li{
+				list-style: none;
+				width: 100px;
+				height: 100px;
+				/* border: 1px solid black; */
+				position: absolute;
+				text-align: center;
+				line-height: 100px;
+				background: url(img/1.png);
+				background-size: 100% 100%;
+				color: white;
+			}
+			.start>div{
+				width: 100px;
+				height: 100px;
+				border: 1px solid black;
+				position: absolute;
+				top: 120px;
+				left: 120px;
+				background: url(img/2.jpg);
+				background-size: 100% 100%;
+			}
+			.start>img{
+				width: 600px;
+				height: 340px;
+				position: absolute;
+				top:0px;
+				left: 50%;
+				margin-left: -300px;
+				z-index: 2;
+				display: none;
+			}
+			.piano{
+				width: 672px;
+				height: 300px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.piano>ul>li{
+				width: 80px;
+				height: 300px;
+				border: 2px solid black;
+				float: left;
+				list-style: none;
+				position: relative;
+				box-shadow: 0px 10px 10px black;
+			}
+			.piano>ul>li>div{
+				width: 40px;
+				height: 150px;
+				background: black;
+				position: absolute;
+				top:0px;
+				right:-22px;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="start">
+		<img src="img/两只老虎.png" alt="">
+		<img src="img/轨迹.png" alt="">
+		<img src="img/小星星.png" alt="">
+		<img src="img/粉刷匠.png" alt="">
+		<img src="img/新年好.png" alt="">
+		<img src="img/找朋友.png" alt="">
+		<img src="img/世上只有.png" alt="">
+		<img src="img/青花瓷.png" alt="">
+		<ul>
+			<li style="top:0px;left:0px;">两只老虎</li>
+			<li style="top:0px;left:120px;">轨迹</li>
+			<li style="top:0px;left:240px;">小星星</li>
+			<li style="top:120px;left:240px;">粉刷匠</li>
+			<li style="top:240px;left:240px;">新年好</li>
+			<li style="top:240px;left:120px;">找朋友</li>
+			<li style="top:240px;left:0px;">世上只有</li>
+			<li style="top:120px;left:0px;">青花瓷</li>
+		</ul>
+		<div id="start"></div>
+	</div>
+	<div class="piano">
+		<ul id="piano">
+			<li><div></div></li>
+			<li><div></div></li>
+			<li></li>
+			<li><div></div></li>
+			<li><div></div></li>
+			<li><div></div></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<audio src="mp3/1do.mp3"></audio>
+	<audio src="mp3/2re.mp3" ></audio>
+	<audio src="mp3/3mi.mp3"></audio>
+	<audio src="mp3/4fa.mp3"></audio>
+	<audio src="mp3/5so.mp3"></audio>
+	<audio src="mp3/6la.mp3"></audio>
+	<audio src="mp3/7si.mp3"></audio>
+	<audio src="mp3/8do.mp3"></audio>
+	<script>
+		var start=document.getElementById("start");
+		var lis=document.getElementsByTagName("li");
+		var i=0;
+		var pic=document.getElementsByTagName("img");
+		start.onmousedown=function(){
+			start.style.boxShadow="0px 0px 10px black";
+		}
+		start.onmouseup=function(){
+			start.style.boxShadow="none";
+			var ran=parseInt(Math.random()*25);
+			var timer=setInterval(function(){
+				ran--;
+				if(ran==0)
+				{
+					clearInterval(timer);
+					pic[i].style.display="block";
+				}
+				for(var j=0;j<lis.length;j++)
+				{
+					lis[j].style.opacity="1";
+				}
+				lis[i].style.opacity="0.5";
+				i++;
+				if(i==8)
+				{
+					i=0;
+				}
+			},100)
+		}
+		for(j=0;j<pic.length;j++){
+			pic[j].onclick=function(){
+				this.style.display="none";
+			}
+		}
+		var piano=document.getElementById("piano").children;
+		var au=document.getElementsByTagName("audio");
+		window.onkeydown=function(event){
+			if(event.keyCode>=49&&event.keyCode<=56){
+				piano[event.keyCode-49].style.boxShadow="none";
+				au[event.keyCode-49].play();
+			}
+		}
+		window.onkeyup=function(event){
+			if(event.keyCode>=49&&event.keyCode<=56){
+				piano[event.keyCode-49].style.boxShadow="0px 10px 10px black";
+				au[event.keyCode-49].pause();
+				au[event.keyCode-49].currentTime="0";
+			}
+		}
+	</script>
+	</body>
+</html>
