@@ -1,0 +1,336 @@
+*{
+				margin: 0px;
+				padding: 0px;
+			}
+			body{
+				width: 100%;
+				background-color: #F5F5F5;
+				color: #333;
+				font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+			}
+			a{
+				text-decoration: none;
+				background-color: rgba(0,0,0,0);
+				color: #333;
+			}
+			p{
+				display: block;
+			    margin-block-start: 1em;
+			    margin-block-end: 1em;
+			    margin-inline-start: 0px;
+			    margin-inline-end: 0px;
+			}
+			a:hover {
+				color: coral;
+			}
+			.site-footer{
+				font-size: 14px;
+				color: #333;
+				width: 100%;
+				background-color: white;
+			}
+			ul{
+				list-style: none;
+			}
+			.container{
+				width: 80%;
+				margin-right: auto;
+			    margin-left: auto;
+				position: relative;
+			}
+			.footer-service{
+				padding: 27px 0;
+				border-bottom: 1px solid #e0e0e0;
+			}
+			.service-ul{
+				display: block;
+				margin-block-start: 0.5em;
+				margin-block-end: 1.5em;
+				margin-inline-start: 0px;
+				margin-inline-end: 0px;
+				/* padding-inline-start: 40px; */
+			}
+			.service-ul:before {
+			    content: " ";
+			    display: table;
+			}
+			.service-ul>li{
+				float: left;
+				width: 19.8%;
+				height: 25px;
+				font-size: 16px;
+				line-height: 25px;
+				text-align: center;
+				display: list-item;
+				border-left: 1px solid #e0e0e0;
+			}
+			/* 此ul下的第一个li的border—left为0; */
+			.service-ul>li:first-child{
+				border-left: 0;
+			}
+			.service-ul>li>a{
+				color: #616161;
+			}
+			.service-ul>li>a>span{
+				margin-right: 6px;
+				font-size: 24px;
+				line-height: 24px;
+				vertical-align: -4px;
+			}
+			.service-ul>li>a:hover{
+				text-decoration: none;
+				color: coral;
+			}
+			.sep{
+				margin: 0;
+			}
+			.footer-links{
+				padding: 40px 0;
+			}
+			.footer-links:before {
+			    content: " ";
+			    display: table;
+			}
+			.footer-links:after {
+			    clear: both;
+				content: " ";
+				display: table;
+			}
+			.footer-links>dl{
+				float: left;
+				width: 13%;
+				margin: 0;
+				display: block;
+				margin-block-start: 1em;
+				margin-block-end: 1em;
+				margin-inline-start: 0px;
+				margin-inline-end: 0px;
+			}
+			.footer-links>dl>dt{
+				margin: -1px 0 26px;
+				font-size: 14px;
+				line-height: 1.25;
+				color: #424242;
+				display: block;
+			}
+			.footer-links>dl>dd{
+				display: block;
+				margin: 10px 0 0;
+				font-size: 12px;
+			}
+			.footer-links>dl>dd>a{
+				color: #757575;
+			}
+			.footer-links>dl>dd>a:hover{
+				color: coral;
+			}
+			.col-contact{
+				float: right;
+			    width: 219.76px;
+			    border-left: 1px solid #e0e0e0;
+			    text-align: center;
+			    color: #616161;
+				display: block;
+			}
+			.col-contact>.phone{
+				font-size: 22px;
+			    line-height: 1;
+			    color: #ff6700;
+			    margin: 0 0 5px 0;
+			}
+			.col-contact>p{
+				margin: 0 0 5px 0;
+			    font-size: 12px;	
+			}
+			.btn{
+				border-color: #ff6700;
+			    background: #fff;
+			    color: #ff6700;
+				width: 118px;
+			    height: 28px;
+			    font-size: 12px;
+			    line-height: 28px;
+				padding: 0;
+			    margin: 0;
+				border: 1px solid #b0b0b0;
+			    text-align: center;
+				cursor: pointer;
+				transition: all .4s;
+				display: inline-block;
+			}
+			.btn:hover{
+				text-decoration: none;
+				color: white;
+				background: #ff6700;
+			}
+			.btnbox{
+				color: #ff6700;
+				font-size: 12px;
+				line-height: 28px;
+				background: white;
+			}
+			.follow{
+				font-size: 12px;
+			    margin-top: 10px;
+			    position: relative;
+				display: block;
+				text-align: center;
+			    color: #616161;
+			}
+			.follow>a{
+				background-size: cover;
+				width: 24px;
+				height: 24px;
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 6px;
+				margin-top: -3px;
+				font-size: 12px;
+				text-align: center;
+			}
+			.wb {
+			    background: url(../img/wb.png) 50% 0 no-repeat;		 
+			}
+			.wb:hover {
+			    text-decoration: none;
+				background: url(../img/wb@2x.png) 50% 0 no-repeat;
+				background-size: cover;
+			}
+			.wx{
+				background: url(../img/wx.png) 50% 0 no-repeat;
+			}
+			.wx:hover {
+			    text-decoration: none;
+				background: url(../img/wx@2x.png) 50% 0 no-repeat;
+				background-size: cover;
+			}
+			.wx-erweima{
+				width: 126px;
+			    height: 126px;
+			    z-index: 2;
+			    position: absolute;
+			    top: 20px;
+			    left: 100px;
+			    display: none;	
+			}
+			.wx:hover .wx-erweima{
+				display: block;
+			}
+			.logo{
+				width: 57px;
+			    height: 57px;
+			    margin-right: 10px;
+			    background: url(../img/logo-footer.png);
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			}
+			.ir {
+			    display: block;
+			    text-align: left;
+			    text-indent: -9999em;
+			    overflow: hidden;
+			}
+			.site-info{
+				padding: 30px 0;
+			    font-size: 12px;
+				color: #333;
+			    width: 100%;
+				background: #FAFAFA;
+			}
+			.info-text{
+			    padding-left: 67px;
+				font-size: 12px;
+			}
+			.info-text>p{
+				margin: 0;
+			    line-height: 18px;
+				display: block;
+				color: #b0b0b0;
+			}
+			.sites>a{
+				color: #b0b0b0;
+			}
+			.sites>a:hover{
+				color: coral;
+			}
+			.sites1>a{
+				color: #757575;
+			}
+			.sites1>a:hover{
+				color: coral;
+			}
+			.info-links{
+				height: 40px;
+				width: 480px;
+			    margin: 4px 0 15px;
+			    padding-left: 67px;
+				position: relative;
+			}
+			.info-links>a>img{
+				width: auto;
+			    height: 28px;
+				margin-left: 0;
+				border: 0;	
+				padding-top: 12px;
+			}
+			.anquan{
+				height: 40px;
+			    display: inline-block;
+			    margin-left: 0;
+				margin-top: 0;
+			    border: 0;	
+			    background: #fff;
+				position: absolute;	
+			}
+			#img1{
+				opacity: 1;
+			}
+			#img2{
+				opacity: 0;
+			}
+			#fuwu{
+				text-align: center;
+				font-size: 12px;
+				color: white;
+				line-height: 20px;
+				float: left;
+				background-size: 100% 100%;
+				position: absolute;
+				right: 50px;
+				top: 2px;
+				opacity: 0;
+			}
+			#tianshu{
+				text-align: center;
+				font-size: 18px;
+				color: white;
+				line-height: 20px;
+				float: left;
+				background-size: 100% 100%;
+				position: absolute;
+				top: 18px;
+				right: 65px;
+				opacity: 0;
+			}
+			#tian{
+				text-align: center;
+				font-size: 18px;
+				color: white;
+				line-height: 20px;
+				float: left;
+				background-size: 100% 100%;
+				position: absolute;
+				top: 18px;
+				right: 45px;
+				opacity: 0;
+			}
+			.slogan{
+				clear: both;
+			    margin: 30px auto 0px;
+			    width: 100%;
+			    height: 19px;
+			    background: url(../img/slogan2020.png) no-repeat center 0;
+				position: absolute;
+				bottom: 10px;
+			}

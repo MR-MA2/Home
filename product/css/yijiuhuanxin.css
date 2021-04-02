@@ -1,0 +1,86 @@
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			body,html{
+				width: 100%;
+			}
+			.yjhx{
+				max-width: 2560px;
+			}
+			.diva{
+				height: 540px;
+				background: url(../img/1e69dcb63b7fd5d05e41049871ecf3d0.jpg) no-repeat 50%;
+				background-size:200% 100%;
+			}
+			.divb{
+				height: 762px;
+				background: url(../img/d2ca5c790525f13d2f1c4e377291e046.jpg) no-repeat 50%;
+				background-size:200% 100%;
+			}
+			.divc{
+				height: 340px;
+				background: url(../img/ed9e44777687a54c2b480180f69ffbd2.jpg) no-repeat 50%;
+				background-size:200% 100%;
+			}
+			.divd{
+				height: 485px;
+				background: url(../img/9756804871a0748f42a48c17d5c39af2.jpg) no-repeat 50%;
+				background-size:200% 100%;
+			}
+			.dive{
+				height: 344px;
+				background: url(../img/f3449ffca188a6a6b65f252bc0167c3c.png) no-repeat 50%;
+				background-size:200% 100%;
+			}
+			.divf{
+				height: 685px;
+				background: url(../img/4bfa3aca664b905bfe2c5fd856ef1e37.jpg) no-repeat 50%;
+				background-size:200% 100%;
+			}
+			.divg{
+				height: 506px;
+				background: url(../img/62a89997e238bdd3caaec733b10c88cb.jpeg) no-repeat 50%;
+				background-size:200% 100%;
+			}
+			
+			.divh{
+				height: 954px;
+				background: url(../img/ab6f0417032f0a6ba78b6f1a51835659.jpg) no-repeat 50%;
+				background-size:200% 100%;
+			}
+			.divi{
+				height: 508px;
+				background: url(../img/af7a62393aeb5dd4c19116a25de61202.jpg) no-repeat 50%;
+				background-size:200% 100%;
+			}
+			.divj{
+				height: 554px;
+				background: url(../img/f0cc50823293f2dfed234f2ee45ea3f7.jpg) no-repeat 50%;
+				background-size:200% 100%;
+			}
+			.divk{
+				height: 859px;
+				background: url(../img/5c34cdc343c6c622ff554ecdf1941439.jpg) no-repeat 50%;
+				background-size:200% 100%;
+			}
+			.divl{
+				height: 863px;
+				background: url(../img/125f7cc49e7cbcceebb011e1a52a2157.jpg) no-repeat 50%;
+				background-size:200% 100%;
+			}
+			.divm{
+				height: 290px;
+				background: url(../img/4d5979196fe0c70871bcc6693613a37c.jpg) no-repeat 50%;
+				background-size:200% 100%;
+			}
+			.divn{
+				height:325px;
+				background: url(../img/1e6646ce3d2001d7ef9a38b7798deb31.jpg) no-repeat 50%;
+				background-size:200% 100%;
+			}
+			.divo{
+				height:242px;
+				background: url(../img/8e0c09842405a7881175c22aa25b1d4b.jpg) no-repeat 50%;
+				background-size:200% 100%;
+			}
